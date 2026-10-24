@@ -1,0 +1,41 @@
+{
+  "data_label": "dummy",
+  "rows": 600,
+  "date_range_dummy": [
+    "2026-09-01",
+    "2026-09-30"
+  ],
+  "total_units_sold_dummy": 633,
+  "total_revenue_dummy_idr": 203667000,
+  "units_by_channel_dummy": {
+    "Facebook": 178,
+    "Shopee": 153,
+    "Instagram": 152,
+    "Carousell": 150
+  },
+  "units_by_product_dummy": {
+    "Sepatu Sneakers Hitam (Contoh)": 166,
+    "Sepatu Sneakers Putih (Contoh)": 122,
+    "Sepatu Kasual Cokelat (Contoh)": 119,
+    "Sepatu Slip-On Abu (Contoh)": 116,
+    "Sepatu Lari Ringan (Contoh)": 110
+  },
+  "low_stock_rows_dummy": 149,
+  "final_stock_dummy": {
+    "DUMMY-001": 41,
+    "DUMMY-002": 35,
+    "DUMMY-003": 5,
+    "DUMMY-004": 127,
+    "DUMMY-005": 14
+  },
+  "findings_dummy": [
+    "Channel with most dummy units: Facebook (178 units).",
+    "Product with most dummy units: Sepatu Sneakers Hitam (Contoh) (166 units).",
+    "Low-stock rows (stock_end <= 5): 149 of 600 rows."
+  ],
+  "recommendations_dummy": [
+    "Restock the dummy products that end the period at low stock before they hit zero (dummy signal only).",
+    "Focus restock checks on the channel with the highest dummy units, but confirm with real UMKM data before acting.",
+    "Keep one master inventory record so channel labels do not drift apart; do not add automatic sync in the prototype."
+  ]
+}
