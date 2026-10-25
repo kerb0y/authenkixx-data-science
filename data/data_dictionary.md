@@ -4,7 +4,8 @@ Source: `data-science/analysis/generate_dummy_data.py` (seed 42).
 This dataset is invented for the prototype. It is NOT real Authenkixx
 data, NOT real sales, and NOT real prices. Do not use it for real
 business decisions. The final version must replace it with primary
-UMKM data only if the PIC confirms it.
+UMKM data only if the owner (Ade) decides to use it; there is no
+external approver to wait for.
 
 File: `data/dummy_inventory_sales.csv` (600 rows, dummy dates 2026-09-01 to 2026-09-30)
 

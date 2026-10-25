@@ -3,6 +3,16 @@
 Prototype only. By Ade Bintang. All data is dummy. No real UMKM data,
 no customer data, no passwords, no automatic platform sync.
 
+## Phase 1 (2026-10-25): what changed
+
+- No analysis code changed: the dummy outputs were re-run and
+  re-verified in Phase 1 (633 dummy units, Rp 203,667,000 dummy
+  revenue, baseline accuracy 0.7833, macro F1 0.7044), and are now
+  served to the web app by the Full-Stack backend via
+  `GET /api/v1/insights` (its `data_science` section). See
+  `API_CONTRACT.md` for the shape.
+- Phase 1 changes are local only and have NOT been pushed yet.
+
 ## Problem and role of data
 
 The owner cannot see, in one place, which dummy products sell, which
@@ -10,7 +20,8 @@ channel sells most, or which stock is running low. Data answers that
 by turning the dummy inventory/sales records into totals, channel and
 product breakdowns, low-stock signals, and a baseline low-stock model
 that other teams can consume as JSON. Real decisions must wait for
-real, PIC-confirmed UMKM data.
+real data that the owner (Ade) decides to use; there is no external
+approver to wait for.
 
 ## Business questions (answered on dummy data)
 
@@ -89,8 +100,8 @@ Verified results (dummy data):
 
 Limitation: dummy data only, tiny weekly sample (60 test rows), and
 shared-stock generator quirks, so this baseline is a pipeline demo,
-not a forecast to act on. The final version must retrain on real data
-and compare models properly.
+not a forecast to act on. The final version must retrain on
+owner-decided data and compare models properly.
 
 ## Dashboard
 
@@ -99,15 +110,21 @@ units, total dummy revenue, low-stock rows), channel and product
 filters, daily dummy units chart, and a file-upload path to replace
 the dummy CSV with a new file of identical columns for the session.
 The dashboard is a skeleton for the final version: it does not yet
-embed into the Full-Stack web app (that integration is tomorrow's
-work; the agreed consumption point is `outputs/business_summary.json`
-and the backend `/api/v1/insights` endpoint).
+embed into the Full-Stack web app (embedding is still open work;
+the agreed consumption point is `outputs/business_summary.json`
+and the backend `/api/v1/insights` endpoint, which Phase 1 now
+serves).
 
 ## How other teams consume the outputs
 
 - Full-Stack: read `outputs/business_summary.json` for insights, or
-  serve it via `/api/v1/insights` in the final version.
+  serve it via `/api/v1/insights` (Phase 1: done, see
+  `API_CONTRACT.md`).
 - Gen AI: use the dummy product/channel labels in
   `data/dummy_inventory_sales.csv` only as example context, never as
   real stock or prices.
 - Data dictionary: `data/data_dictionary.md`.
+
+## Disclaimer
+
+See CHECKLIST_STATUS.md in this repo. Phase 1 is not the final version. The final target is to match the Authenkixx use-case document and fulfil all Main Quest checklist items for Full-Stack, Gen AI, and Data Science. Phase 1 does not yet claim full checklist compliance.
