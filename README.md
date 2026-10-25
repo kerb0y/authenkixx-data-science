@@ -4,15 +4,23 @@ Ini masih prototype, ya. Dibuat oleh Ade Bintang. Semua datanya
 dummy. Nggak ada data asli UMKM, nggak ada data customer, nggak ada
 password, dan nggak ada sinkronisasi otomatis ke platform lain.
 
-## Yang berubah di Fase 1 (25 Oktober 2026)
+## Yang berubah: data Nike dummy (25 Oktober 2026)
 
-- Kode analisisnya nggak berubah: output dummy-nya dijalankan ulang
-  dan diverifikasi lagi di Fase 1 (633 unit dummy, revenue dummy
-  Rp 203.667.000, accuracy baseline 0.7833, macro F1 0.7044), dan
-  sekarang output itu disajikan ke web app oleh backend Full-Stack
-  lewat `GET /api/v1/insights` (bagian `data_science`-nya). Buat
-  bentuknya, lihat `API_CONTRACT.md`.
-- Fase 1 ini sudah di-push ke GitHub.
+- Dataset lama 600 baris sudah diganti output-nya dengan dataset
+  Nike dummy: 120 produk, 86.400 baris penjualan dummy
+  (120 produk x 4 kanal x 180 hari dummy, 2026-01-01 sampai
+  2026-06-29), total 82.526 unit dummy dan revenue dummy
+  Rp 186.375.340.000. Script barunya:
+  `analysis/wrangle_analyze_nike.py` dan
+  `analysis/baseline_model_nike.py`, output-nya tetap ke
+  `outputs/business_summary.json` dan `outputs/baseline_model.json`
+  supaya backend Full-Stack nggak perlu diubah.
+- Baseline-nya juga berubah definisi (jujur ditulis di bawah),
+  karena dataset Nike nggak punya trayektori stok harian, jadi
+  target minggu depan yang lama nggak bisa dihitung dari data ini.
+- File dataset lama (`data/dummy_inventory_sales.csv` dan script
+  lamanya) dibiarkan utuh sebagai arsip, bukan dihapus, tapi
+  output yang dipakai sekarang adalah dari dataset Nike.
 
 ## Masalahnya dan peran data di sini
 
@@ -35,80 +43,99 @@ pihak luar yang perlu ditunggu.
 
 ```bash
 pip install -r requirements.txt
-python analysis/generate_dummy_data.py   # bikin ulang CSV dummy (seed 42)
-python analysis/wrangle_analyze.py       # -> outputs/business_summary.json
-python analysis/baseline_model.py        # -> outputs/baseline_model.json
-streamlit run dashboard/app.py           # dashboard interaktif
+python analysis/generate_nike_dummy.py     # bikin ulang dataset Nike dummy (seed 42)
+python analysis/wrangle_analyze_nike.py    # -> outputs/business_summary.json
+python analysis/baseline_model_nike.py     # -> outputs/baseline_model.json
+streamlit run dashboard/app.py             # dashboard interaktif (masih pakai data lama, lihat bawah)
 ```
 
 ## Data (cuma dummy, sudah dilabeli)
 
-- `data/dummy_inventory_sales.csv`: 600 baris, tanggal dummy
-  2026-09-01 sampai 2026-09-30, 5 produk dummy x 4 label kanal
-  (Instagram, Facebook, Carousell, Shopee) x 30 hari.
-- `data/data_dictionary.md`: definisi kolom lengkap, sumbernya
-  (dibuat oleh `analysis/generate_dummy_data.py`, seed 42), dan
-  batasannya. Nilai kanal itu cuma label, bukan bukti penjualan di
-  kanal itu dan bukan sinkronisasi.
-- Batasan: stok di generator itu dipakai bareng lintas kanal dan
-  urutan kanal dalam satu hari itu acak, jadi baris stok per kanal
-  bukan buku stok per kanal yang beneran. Di dataset ini sengaja
-  nggak ada data customer, pesanan, pembayaran, atau pengiriman.
+- `data/nike_dummy/nike_products_dummy.csv`: 120 produk Nike dummy
+  (Sneakers 48, Running 30, Trail Running 18, Sandal dan Clogs 12,
+  Basketball 6, Training 6), harga dummy Rp 513.000 sampai
+  Rp 3.984.000, stok dummy 0 sampai 60.
+- `data/nike_dummy/nike_sales_dummy.csv`: 86.400 baris, tanggal
+  dummy 2026-01-01 sampai 2026-06-29, 120 produk x 4 label kanal
+  (Instagram, Facebook, Carousell, Shopee) x 180 hari.
+- `data/nike_dummy/nike_data_dictionary.md`: definisi kolom
+  lengkap, sumbernya (dibuat oleh
+  `analysis/generate_nike_dummy.py`, seed 42), dan batasannya.
+  Nilai kanal itu cuma label, bukan bukti penjualan di kanal itu
+  dan bukan sinkronisasi.
+- Dataset lama `data/dummy_inventory_sales.csv` (600 baris,
+  September 2026 dummy, 5 produk) masih ada sebagai arsip, tapi
+  bukan lagi sumber output yang dipakai.
+- Batasan: di dataset Nike ini, stok adalah stok dummy saat ini
+  per produk, bukan trayektori stok harian, jadi nggak bisa
+  menghitung stok akhir per hari dari file penjualan. Di dataset
+  ini sengaja nggak ada data customer, pesanan, pembayaran, atau
+  pengiriman.
 
 ## Data wrangling
 
-`analysis/wrangle_analyze.py`: parsing tanggal dummy, memastikan
-nggak ada nilai yang hilang, menghitung revenue dummy (unit x harga
-dummy) dan flag stok menipis (stock_end <= 5), terus diagregasi per
-kanal, produk, dan hari.
+`analysis/wrangle_analyze_nike.py`: parsing tanggal dummy,
+memastikan nggak ada nilai yang hilang, menghitung revenue dummy
+(unit x harga dummy), terus diagregasi per kanal, kategori, dan
+produk. Stok menipis dihitung dari stok dummy saat ini per produk
+(<= 5), bukan dari stok akhir harian, karena file penjualan Nike
+nggak punya trayektori stok.
 
 ## Temuan dan rekomendasi (data dummy saja)
 
-Sudah diverifikasi dengan menjalankan `wrangle_analyze.py` di CSV
-dummy:
+Sudah diverifikasi dengan menjalankan `wrangle_analyze_nike.py`
+di dataset Nike dummy:
 
-- Total unit dummy terjual: 633. Total revenue dummy:
-  Rp 203.667.000 (harga dummy x unit dummy, BUKAN revenue asli).
-- Unit per kanal (dummy): Facebook 178, Shopee 153, Instagram 152,
-  Carousell 150. Facebook paling tinggi di dataset dummy ini.
-- Unit per produk (dummy): Sepatu Sneakers Hitam (Contoh) 166,
-  Sepatu Sneakers Putih (Contoh) 122, Sepatu Kasual Cokelat (Contoh)
-  119, Sepatu Slip-On Abu (Contoh) 116, Sepatu Lari Ringan (Contoh)
-  110.
-- Baris stok menipis (stock_end <= 5): 149 dari 600 baris.
-- Stok akhir dummy: DUMMY-001: 41, DUMMY-002: 35, DUMMY-003: 5,
-  DUMMY-004: 127, DUMMY-005: 14.
+- Total unit dummy terjual: 82.526. Total revenue dummy:
+  Rp 186.375.340.000 (harga dummy x unit dummy, BUKAN revenue asli,
+  dan volumenya sengaja besar buat pemodelan, bukan gambaran toko
+  asli).
+- Unit per kanal (dummy): Instagram 23.254, Facebook 21.288,
+  Shopee 20.425, Carousell 17.559. Instagram paling tinggi di
+  dataset dummy ini.
+- Unit per kategori (dummy): Sneakers 37.346, Running 21.849,
+  Trail Running 9.824, Sandal dan Clogs 7.082, Basketball 3.489,
+  Training 2.936.
+- Baris penjualan untuk produk stok menipis dummy (stok saat ini
+  <= 5): 21.600 dari 86.400 baris.
+- Stok dummy saat ini: 120 produk, 90 tersedia, 24 menipis, 6 habis.
 
 Rekomendasi (cuma sinyal dummy, konfirmasi dulu pakai data asli):
-1. Restock produk dummy yang stok akhirnya menipis (terutama
-   DUMMY-003 di angka 5) sebelum sampai nol.
-2. Fokus cek restock ke kanal dengan unit dummy tertinggi, tapi
-   jangan anggap ranking dummy ini sebagai ranking kanal yang asli.
+1. Restock produk dummy yang stoknya menipis atau habis sebelum
+   makin banyak yang nol.
+2. Fokus cek restock ke kanal dan kategori dengan unit dummy
+   tertinggi, tapi jangan anggap ranking dummy ini sebagai ranking
+   yang asli.
 3. Pertahankan satu data induk inventory supaya label kanal nggak
    saling melenceng, dan jangan tambahkan sinkronisasi otomatis di
    prototype ini.
 
 ## Model baseline (tanpa leakage)
 
-`analysis/baseline_model.py`: memprediksi apakah minggu
-produk-kanal akan berakhir di stok menipis minggu depannya
-(stock_end <= 5 di minggu berikutnya). Fiturnya cuma dari minggu
-sebelumnya (stok awal minggu, rata-rata unit harian, harga). Split
-berdasarkan waktu (train minggu < 38, test minggu >= 38; train 40
-baris, test 60 baris), dan scaler-nya cuma di-fit di data training,
-jadi nggak ada informasi test yang bocor ke training. Modelnya:
+`analysis/baseline_model_nike.py`: memprediksi apakah sebuah
+produk sedang stok menipis (stok dummy saat ini <= 5), dari harga
+dummy, total unit dummy terjual 180 hari, dan unit dummy 30 hari
+terakhir. Split stratified 80/20, random_state 42 (train 96 baris,
+test 24 baris), dan scaler-nya cuma di-fit di data training, jadi
+nggak ada informasi test yang bocor ke training. Modelnya:
 LogisticRegression baseline.
 
 Hasil terverifikasi (data dummy):
-- Accuracy (test): 0.7833
-- Macro F1 (test): 0.7044
-- Test positive rate: 0.2000
+- Accuracy (test): 0.7500
+- Macro F1 (test): 0.4286
+- Test positive rate: 0.2500
 
-Batasan: cuma data dummy, sampel mingguan kecil (60 baris test),
-dan generator stoknya dipakai bareng lintas kanal, jadi baseline
-ini cuma demo pipeline, bukan forecast yang bisa langsung dipakai
-buat restock. Versi final wajib latih ulang di data yang sudah
-diputuskan pemiliknya dan membandingkan model dengan benar.
+Batasan yang jujur: accuracy 0.75 ini sama dengan sekadar menebak
+semua produk tidak menipis (75 persen produk memang tidak menipis),
+dan macro F1 yang rendah menunjukkan model ini praktis nggak
+menangkap produk menipis. Itu masuk akal, karena di generator
+dummy ini stok dibuat independen dari penjualan, jadi penjualan
+nggak bisa memprediksi stok. Baseline ini cuma demo pipeline,
+bukan forecast yang bisa langsung dipakai buat restock, dan
+nggak bisa dibandingkan dengan baseline mingguan lama (accuracy
+0.7833, macro F1 0.7044) karena target dan datanya sudah berubah.
+Versi final wajib latih ulang di data yang sudah diputuskan
+pemiliknya dan membandingkan model dengan benar.
 
 ## Dashboard
 
@@ -116,21 +143,25 @@ diputuskan pemiliknya dan membandingkan model dengan benar.
 total revenue dummy, baris stok menipis), filter kanal dan produk,
 grafik unit dummy harian, dan jalur upload file buat mengganti CSV
 dummy dengan file baru yang kolomnya sama, khusus buat sesi itu.
-Dashboard ini masih kerangka buat versi final: belum tertanam di
-web app Full-Stack (nempelinnya masih kerjaan terbuka, titik
-konsumsi yang disepakati adalah `outputs/business_summary.json`
-dan endpoint backend `/api/v1/insights`, yang sejak Fase 1 sudah
-disajikan).
+Catatan: dashboard ini masih membaca dataset lama, belum diperbarui
+ke dataset Nike, jadi angkanya belum tentu sama dengan
+`outputs/business_summary.json` yang baru. Dashboard ini masih
+kerangka buat versi final: belum tertanam di web app Full-Stack
+(nempelinnya masih kerjaan terbuka, titik konsumsi yang disepakati
+adalah `outputs/business_summary.json` dan endpoint backend
+`/api/v1/insights`, yang sudah disajikan).
 
 ## Cara tim lain memakai output-nya
 
 - Full-Stack: baca `outputs/business_summary.json` buat insights,
-  atau sajikan lewat `/api/v1/insights` (Fase 1: sudah, lihat
+  atau sajikan lewat `/api/v1/insights` (sudah, lihat
   `API_CONTRACT.md`).
 - Gen AI: pakai label produk/kanal dummy di
-  `data/dummy_inventory_sales.csv` cuma sebagai konteks contoh,
-  jangan pernah dianggap stok atau harga asli.
-- Kamus data: `data/data_dictionary.md`.
+  `data/nike_dummy/nike_products_dummy.csv` cuma sebagai konteks
+  contoh, jangan pernah dianggap stok atau harga asli.
+- Kamus data: `data/nike_dummy/nike_data_dictionary.md` (dataset
+  Nike yang dipakai sekarang) dan `data/data_dictionary.md`
+  (dataset lama, arsip).
 
 ## Disclaimer
 

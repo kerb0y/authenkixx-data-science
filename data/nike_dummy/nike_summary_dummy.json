@@ -1,0 +1,31 @@
+{
+  "data_label": "dummy",
+  "generator": "analysis/generate_nike_dummy.py",
+  "seed": 42,
+  "products": 120,
+  "products_by_category": {
+    "Sneakers": 48,
+    "Running": 30,
+    "Trail Running": 18,
+    "Sandal dan Clogs": 12,
+    "Basketball": 6,
+    "Training": 6
+  },
+  "sales_rows": 86400,
+  "sales_date_range_dummy": [
+    "2026-01-01",
+    "2026-06-29"
+  ],
+  "sales_days_dummy": 180,
+  "channels": [
+    "Instagram",
+    "Facebook",
+    "Carousell",
+    "Shopee"
+  ],
+  "total_units_sold_dummy": 82526,
+  "total_revenue_dummy_idr": 186375340000,
+  "out_of_stock_products_dummy": 6,
+  "low_stock_products_dummy": 24,
+  "note": "All figures are dummy, generated with seed 42. Not Nike official data and not real Authenkixx sales."
+}

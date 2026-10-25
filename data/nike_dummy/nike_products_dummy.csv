@@ -1,0 +1,121 @@
+product_id,brand,category,model,product_name,colourway,gender,price_dummy_idr,stock_dummy,availability,channels,size_range_eu,popularity_dummy,data_label
+NK-DUMMY-001,Nike,Sneakers,Air Force 1 '07,Nike Air Force 1 '07 (Contoh),Putih,Unisex,1401000,25,tersedia,Facebook;Instagram,36-47,0.682,dummy
+NK-DUMMY-002,Nike,Sneakers,Air Max 90,Nike Air Max 90 (Contoh),Abu-abu/Hitam,Pria,1655000,18,tersedia,Instagram;Shopee,36-47,0.786,dummy
+NK-DUMMY-003,Nike,Sneakers,Air Max 270,Nike Air Max 270 (Contoh),Cokelat Muda,Pria,1407000,18,tersedia,Shopee;Instagram;Facebook;Carousell,36-47,1.207,dummy
+NK-DUMMY-004,Nike,Sneakers,Dunk Low,Nike Dunk Low (Contoh),Biru Navy,Pria,3030000,8,tersedia,Facebook;Shopee,36-47,0.674,dummy
+NK-DUMMY-005,Nike,Sneakers,Blazer Mid '77,Nike Blazer Mid '77 (Contoh),Putih,Wanita,2769000,35,tersedia,Carousell;Instagram;Facebook;Shopee,36-47,0.663,dummy
+NK-DUMMY-006,Nike,Sneakers,Cortez,Nike Cortez (Contoh),Hijau Army,Pria,2780000,18,tersedia,Instagram;Carousell,36-47,1.218,dummy
+NK-DUMMY-007,Nike,Sneakers,Air Jordan 1 Mid,Nike Air Jordan 1 Mid (Contoh),Hitam,Pria,2252000,35,tersedia,Carousell;Facebook;Shopee,36-47,0.896,dummy
+NK-DUMMY-008,Nike,Sneakers,Air Max 97,Nike Air Max 97 (Contoh),Abu-abu,Unisex,2392000,25,tersedia,Facebook;Carousell,36-47,0.796,dummy
+NK-DUMMY-009,Nike,Sneakers,Air Max SC,Nike Air Max SC (Contoh),Biru Muda,Pria,2853000,8,tersedia,Facebook;Carousell;Shopee;Instagram,36-47,1.257,dummy
+NK-DUMMY-010,Nike,Sneakers,P-6000,Nike P-6000 (Contoh),Kuning,Unisex,2942000,8,tersedia,Carousell;Instagram,36-47,0.999,dummy
+NK-DUMMY-011,Nike,Sneakers,Air Max Pulse,Nike Air Max Pulse (Contoh),Biru Muda,Unisex,1884000,8,tersedia,Carousell;Shopee,36-47,0.943,dummy
+NK-DUMMY-012,Nike,Sneakers,Dunk High,Nike Dunk High (Contoh),Hijau Mint,Pria,2934000,12,tersedia,Shopee;Instagram,36-47,1.289,dummy
+NK-DUMMY-013,Nike,Sneakers,Air Force 1 '07,Nike Air Force 1 '07 (Contoh),Merah/Hitam,Unisex,1954000,25,tersedia,Instagram;Facebook;Carousell,36-47,1.397,dummy
+NK-DUMMY-014,Nike,Sneakers,Air Max 90,Nike Air Max 90 (Contoh),Putih/Merah,Unisex,2328000,60,tersedia,Instagram;Carousell,36-47,1.201,dummy
+NK-DUMMY-015,Nike,Sneakers,Air Max 270,Nike Air Max 270 (Contoh),Kuning,Unisex,1755000,8,tersedia,Shopee;Instagram,36-47,1.301,dummy
+NK-DUMMY-016,Nike,Sneakers,Dunk Low,Nike Dunk Low (Contoh),Krem,Pria,3349000,25,tersedia,Instagram;Carousell;Facebook;Shopee,36-47,0.899,dummy
+NK-DUMMY-017,Nike,Sneakers,Blazer Mid '77,Nike Blazer Mid '77 (Contoh),Biru Navy,Wanita,3471000,50,tersedia,Carousell;Facebook;Instagram;Shopee,36-47,1.303,dummy
+NK-DUMMY-018,Nike,Sneakers,Cortez,Nike Cortez (Contoh),Hijau Army,Unisex,2279000,1,menipis,Instagram;Shopee;Facebook;Carousell,36-47,1.213,dummy
+NK-DUMMY-019,Nike,Sneakers,Air Jordan 1 Mid,Nike Air Jordan 1 Mid (Contoh),Merah/Hitam,Unisex,3245000,50,tersedia,Carousell;Shopee,36-47,0.939,dummy
+NK-DUMMY-020,Nike,Sneakers,Air Max 97,Nike Air Max 97 (Contoh),Abu-abu,Pria,2122000,25,tersedia,Carousell;Facebook;Shopee,36-47,0.798,dummy
+NK-DUMMY-021,Nike,Sneakers,Air Max SC,Nike Air Max SC (Contoh),Hitam,Pria,2683000,0,habis,Facebook;Carousell;Instagram;Shopee,36-47,1.166,dummy
+NK-DUMMY-022,Nike,Sneakers,P-6000,Nike P-6000 (Contoh),Hitam/Putih,Unisex,2236000,1,menipis,Carousell;Instagram,36-47,0.79,dummy
+NK-DUMMY-023,Nike,Sneakers,Air Max Pulse,Nike Air Max Pulse (Contoh),Hitam/Merah,Pria,2176000,18,tersedia,Shopee;Instagram;Facebook;Carousell,36-47,0.675,dummy
+NK-DUMMY-024,Nike,Sneakers,Dunk High,Nike Dunk High (Contoh),Oranye,Pria,2750000,12,tersedia,Instagram;Carousell;Shopee,36-47,0.922,dummy
+NK-DUMMY-025,Nike,Sneakers,Air Force 1 '07,Nike Air Force 1 '07 (Contoh),Kuning,Wanita,1746000,8,tersedia,Shopee;Instagram,36-47,0.747,dummy
+NK-DUMMY-026,Nike,Sneakers,Air Max 90,Nike Air Max 90 (Contoh),Biru Muda,Pria,2322000,35,tersedia,Shopee;Carousell,36-47,0.64,dummy
+NK-DUMMY-027,Nike,Sneakers,Air Max 270,Nike Air Max 270 (Contoh),Abu-abu/Hitam,Wanita,1359000,50,tersedia,Facebook;Shopee,36-47,0.985,dummy
+NK-DUMMY-028,Nike,Sneakers,Dunk Low,Nike Dunk Low (Contoh),Pink,Wanita,1539000,4,menipis,Shopee;Facebook,36-47,0.828,dummy
+NK-DUMMY-029,Nike,Sneakers,Blazer Mid '77,Nike Blazer Mid '77 (Contoh),Abu-abu/Hitam,Unisex,3292000,4,menipis,Facebook;Instagram;Carousell,36-47,0.851,dummy
+NK-DUMMY-030,Nike,Sneakers,Cortez,Nike Cortez (Contoh),Hitam/Putih,Pria,3251000,12,tersedia,Facebook;Instagram;Carousell;Shopee,36-47,1.076,dummy
+NK-DUMMY-031,Nike,Sneakers,Air Jordan 1 Mid,Nike Air Jordan 1 Mid (Contoh),Cokelat,Wanita,2952000,3,menipis,Facebook;Carousell;Instagram;Shopee,36-47,1.126,dummy
+NK-DUMMY-032,Nike,Sneakers,Air Max 97,Nike Air Max 97 (Contoh),Hijau Mint,Pria,3440000,8,tersedia,Facebook;Carousell;Shopee,36-47,0.812,dummy
+NK-DUMMY-033,Nike,Sneakers,Air Max SC,Nike Air Max SC (Contoh),Merah/Hitam,Unisex,2527000,12,tersedia,Instagram;Facebook,36-47,1.399,dummy
+NK-DUMMY-034,Nike,Sneakers,P-6000,Nike P-6000 (Contoh),Putih,Pria,1599000,18,tersedia,Carousell;Instagram;Facebook;Shopee,36-47,0.896,dummy
+NK-DUMMY-035,Nike,Sneakers,Air Max Pulse,Nike Air Max Pulse (Contoh),Biru Navy,Unisex,3093000,35,tersedia,Instagram;Carousell;Facebook,36-47,0.683,dummy
+NK-DUMMY-036,Nike,Sneakers,Dunk High,Nike Dunk High (Contoh),Merah/Hitam,Wanita,2382000,3,menipis,Facebook;Shopee,36-47,1.084,dummy
+NK-DUMMY-037,Nike,Sneakers,Air Force 1 '07,Nike Air Force 1 '07 (Contoh),Kuning,Pria,2132000,25,tersedia,Shopee;Facebook;Instagram,36-47,1.107,dummy
+NK-DUMMY-038,Nike,Sneakers,Air Max 90,Nike Air Max 90 (Contoh),Krem,Unisex,1479000,0,habis,Carousell;Instagram,36-47,0.953,dummy
+NK-DUMMY-039,Nike,Sneakers,Air Max 270,Nike Air Max 270 (Contoh),Oranye,Unisex,1338000,3,menipis,Instagram;Facebook,36-47,1.042,dummy
+NK-DUMMY-040,Nike,Sneakers,Dunk Low,Nike Dunk Low (Contoh),Oranye,Unisex,1821000,1,menipis,Instagram;Facebook;Shopee,36-47,0.8,dummy
+NK-DUMMY-041,Nike,Sneakers,Blazer Mid '77,Nike Blazer Mid '77 (Contoh),Putih,Pria,2747000,25,tersedia,Facebook;Instagram;Carousell,36-47,1.305,dummy
+NK-DUMMY-042,Nike,Sneakers,Cortez,Nike Cortez (Contoh),Putih/Hitam,Wanita,2033000,25,tersedia,Shopee;Carousell;Instagram,36-47,0.727,dummy
+NK-DUMMY-043,Nike,Sneakers,Air Jordan 1 Mid,Nike Air Jordan 1 Mid (Contoh),Putih,Wanita,2865000,35,tersedia,Facebook;Instagram;Shopee,36-47,0.844,dummy
+NK-DUMMY-044,Nike,Sneakers,Air Max 97,Nike Air Max 97 (Contoh),Cokelat,Wanita,2212000,0,habis,Shopee;Facebook,36-47,1.291,dummy
+NK-DUMMY-045,Nike,Sneakers,Air Max SC,Nike Air Max SC (Contoh),Krem,Wanita,2737000,18,tersedia,Carousell;Instagram;Shopee,36-47,0.743,dummy
+NK-DUMMY-046,Nike,Sneakers,P-6000,Nike P-6000 (Contoh),Krem,Wanita,1455000,3,menipis,Carousell;Shopee;Facebook,36-47,1.085,dummy
+NK-DUMMY-047,Nike,Sneakers,Air Max Pulse,Nike Air Max Pulse (Contoh),Putih/Merah,Pria,1772000,12,tersedia,Facebook;Shopee;Instagram;Carousell,36-47,1.016,dummy
+NK-DUMMY-048,Nike,Sneakers,Dunk High,Nike Dunk High (Contoh),Abu-abu/Hitam,Wanita,2106000,12,tersedia,Carousell;Shopee,36-47,1.131,dummy
+NK-DUMMY-049,Nike,Running,Pegasus 41,Nike Pegasus 41 (Contoh),Putih,Wanita,2973000,35,tersedia,Carousell;Shopee;Facebook;Instagram,36-47,0.984,dummy
+NK-DUMMY-050,Nike,Running,Pegasus 40,Nike Pegasus 40 (Contoh),Abu-abu/Hitam,Wanita,1759000,5,menipis,Facebook;Carousell;Shopee,36-47,0.883,dummy
+NK-DUMMY-051,Nike,Running,Vomero 17,Nike Vomero 17 (Contoh),Putih/Hitam,Wanita,2121000,8,tersedia,Carousell;Facebook;Shopee,36-47,0.969,dummy
+NK-DUMMY-052,Nike,Running,Invincible 3,Nike Invincible 3 (Contoh),Putih/Merah,Unisex,2468000,25,tersedia,Instagram;Facebook,36-47,0.961,dummy
+NK-DUMMY-053,Nike,Running,Structure 25,Nike Structure 25 (Contoh),Cokelat Muda,Pria,2185000,2,menipis,Carousell;Instagram,36-47,0.61,dummy
+NK-DUMMY-054,Nike,Running,Winflo 11,Nike Winflo 11 (Contoh),Hitam/Putih,Unisex,2000000,60,tersedia,Instagram;Facebook;Carousell;Shopee,36-47,0.984,dummy
+NK-DUMMY-055,Nike,Running,React Infinity 4,Nike React Infinity 4 (Contoh),Hitam/Merah,Pria,2317000,8,tersedia,Instagram;Facebook,36-47,0.63,dummy
+NK-DUMMY-056,Nike,Running,Zoom Fly 5,Nike Zoom Fly 5 (Contoh),Putih/Merah,Pria,2450000,1,menipis,Instagram;Facebook,36-47,1.055,dummy
+NK-DUMMY-057,Nike,Running,Streakfly,Nike Streakfly (Contoh),Putih/Merah,Pria,2643000,18,tersedia,Shopee;Carousell;Facebook,36-47,1.016,dummy
+NK-DUMMY-058,Nike,Running,Alphafly 3,Nike Alphafly 3 (Contoh),Hitam/Merah,Wanita,2420000,8,tersedia,Carousell;Shopee,36-47,0.936,dummy
+NK-DUMMY-059,Nike,Running,Pegasus 41,Nike Pegasus 41 (Contoh),Krem,Wanita,2399000,2,menipis,Facebook;Shopee;Carousell,36-47,1.117,dummy
+NK-DUMMY-060,Nike,Running,Pegasus 40,Nike Pegasus 40 (Contoh),Hitam,Pria,1782000,4,menipis,Facebook;Carousell;Instagram,36-47,0.792,dummy
+NK-DUMMY-061,Nike,Running,Vomero 17,Nike Vomero 17 (Contoh),Kuning,Wanita,2610000,12,tersedia,Facebook;Shopee,36-47,1.125,dummy
+NK-DUMMY-062,Nike,Running,Invincible 3,Nike Invincible 3 (Contoh),Hijau Mint,Wanita,2923000,0,habis,Shopee;Facebook;Instagram;Carousell,36-47,1.022,dummy
+NK-DUMMY-063,Nike,Running,Structure 25,Nike Structure 25 (Contoh),Oranye,Wanita,2601000,25,tersedia,Facebook;Shopee;Instagram;Carousell,36-47,0.84,dummy
+NK-DUMMY-064,Nike,Running,Winflo 11,Nike Winflo 11 (Contoh),Pink,Unisex,2187000,18,tersedia,Facebook;Shopee;Instagram,36-47,0.873,dummy
+NK-DUMMY-065,Nike,Running,React Infinity 4,Nike React Infinity 4 (Contoh),Pink,Wanita,2711000,18,tersedia,Instagram;Carousell,36-47,0.602,dummy
+NK-DUMMY-066,Nike,Running,Zoom Fly 5,Nike Zoom Fly 5 (Contoh),Biru Muda,Wanita,1871000,1,menipis,Carousell;Instagram;Facebook,36-47,0.74,dummy
+NK-DUMMY-067,Nike,Running,Streakfly,Nike Streakfly (Contoh),Pink,Pria,2068000,25,tersedia,Carousell;Instagram;Facebook,36-47,1.019,dummy
+NK-DUMMY-068,Nike,Running,Alphafly 3,Nike Alphafly 3 (Contoh),Hitam/Putih,Pria,2215000,5,menipis,Instagram;Shopee,36-47,0.646,dummy
+NK-DUMMY-069,Nike,Running,Pegasus 41,Nike Pegasus 41 (Contoh),Putih/Hitam,Pria,2771000,4,menipis,Shopee;Carousell,36-47,0.893,dummy
+NK-DUMMY-070,Nike,Running,Pegasus 40,Nike Pegasus 40 (Contoh),Abu-abu,Pria,2451000,25,tersedia,Facebook;Carousell;Instagram,36-47,1.166,dummy
+NK-DUMMY-071,Nike,Running,Vomero 17,Nike Vomero 17 (Contoh),Putih,Pria,2684000,0,habis,Shopee;Facebook;Instagram,36-47,0.913,dummy
+NK-DUMMY-072,Nike,Running,Invincible 3,Nike Invincible 3 (Contoh),Cokelat,Wanita,1707000,25,tersedia,Instagram;Carousell;Shopee,36-47,0.872,dummy
+NK-DUMMY-073,Nike,Running,Structure 25,Nike Structure 25 (Contoh),Ungu,Pria,1640000,12,tersedia,Instagram;Facebook;Carousell,36-47,0.805,dummy
+NK-DUMMY-074,Nike,Running,Winflo 11,Nike Winflo 11 (Contoh),Ungu,Unisex,2800000,35,tersedia,Facebook;Shopee;Instagram,36-47,0.865,dummy
+NK-DUMMY-075,Nike,Running,React Infinity 4,Nike React Infinity 4 (Contoh),Krem,Wanita,2760000,25,tersedia,Shopee;Facebook;Carousell;Instagram,36-47,1.089,dummy
+NK-DUMMY-076,Nike,Running,Zoom Fly 5,Nike Zoom Fly 5 (Contoh),Hitam,Unisex,2070000,35,tersedia,Shopee;Carousell,36-47,0.964,dummy
+NK-DUMMY-077,Nike,Running,Streakfly,Nike Streakfly (Contoh),Kuning,Wanita,1557000,12,tersedia,Facebook;Shopee;Instagram,36-47,1.053,dummy
+NK-DUMMY-078,Nike,Running,Alphafly 3,Nike Alphafly 3 (Contoh),Kuning,Pria,2071000,35,tersedia,Instagram;Carousell;Shopee,36-47,0.674,dummy
+NK-DUMMY-079,Nike,Trail Running,Pegasus Trail 5,Nike Pegasus Trail 5 (Contoh),Oranye,Unisex,2799000,18,tersedia,Shopee;Carousell,36-47,0.596,dummy
+NK-DUMMY-080,Nike,Trail Running,Terra Kiger 10,Nike Terra Kiger 10 (Contoh),Putih/Hitam,Wanita,1989000,8,tersedia,Facebook;Shopee;Carousell,36-47,0.626,dummy
+NK-DUMMY-081,Nike,Trail Running,Zegama 2,Nike Zegama 2 (Contoh),Ungu,Wanita,2670000,60,tersedia,Carousell;Facebook;Shopee;Instagram,36-47,0.481,dummy
+NK-DUMMY-082,Nike,Trail Running,Wildhorse 9,Nike Wildhorse 9 (Contoh),Putih,Pria,3276000,5,menipis,Facebook;Instagram,36-47,0.715,dummy
+NK-DUMMY-083,Nike,Trail Running,Ultrafly,Nike Ultrafly (Contoh),Krem,Pria,3282000,18,tersedia,Carousell;Instagram;Shopee;Facebook,36-47,0.533,dummy
+NK-DUMMY-084,Nike,Trail Running,Trail 4,Nike Trail 4 (Contoh),Hijau Army,Pria,1827000,25,tersedia,Carousell;Instagram,36-47,0.626,dummy
+NK-DUMMY-085,Nike,Trail Running,Juniper Trail 3,Nike Juniper Trail 3 (Contoh),Merah/Hitam,Wanita,3105000,35,tersedia,Instagram;Shopee;Facebook,36-47,0.59,dummy
+NK-DUMMY-086,Nike,Trail Running,Pegasus Trail 5,Nike Pegasus Trail 5 (Contoh),Kuning,Wanita,2176000,50,tersedia,Shopee;Instagram;Carousell,36-47,0.596,dummy
+NK-DUMMY-087,Nike,Trail Running,Terra Kiger 10,Nike Terra Kiger 10 (Contoh),Hijau Mint,Wanita,3088000,25,tersedia,Facebook;Carousell,36-47,0.401,dummy
+NK-DUMMY-088,Nike,Trail Running,Zegama 2,Nike Zegama 2 (Contoh),Cokelat,Wanita,2041000,18,tersedia,Facebook;Carousell;Shopee,36-47,0.796,dummy
+NK-DUMMY-089,Nike,Trail Running,Wildhorse 9,Nike Wildhorse 9 (Contoh),Hijau Army,Pria,3004000,60,tersedia,Instagram;Carousell;Shopee,36-47,0.66,dummy
+NK-DUMMY-090,Nike,Trail Running,Ultrafly,Nike Ultrafly (Contoh),Krem,Pria,3151000,2,menipis,Facebook;Carousell,36-47,0.435,dummy
+NK-DUMMY-091,Nike,Trail Running,Trail 4,Nike Trail 4 (Contoh),Oranye,Wanita,2721000,25,tersedia,Carousell;Instagram;Shopee,36-47,0.699,dummy
+NK-DUMMY-092,Nike,Trail Running,Juniper Trail 3,Nike Juniper Trail 3 (Contoh),Biru Muda,Unisex,1944000,25,tersedia,Facebook;Shopee;Instagram,36-47,0.468,dummy
+NK-DUMMY-093,Nike,Trail Running,Pegasus Trail 5,Nike Pegasus Trail 5 (Contoh),Merah/Hitam,Wanita,2343000,35,tersedia,Instagram;Shopee,36-47,0.646,dummy
+NK-DUMMY-094,Nike,Trail Running,Terra Kiger 10,Nike Terra Kiger 10 (Contoh),Hijau Mint,Wanita,2390000,12,tersedia,Carousell;Shopee;Facebook,36-47,0.6,dummy
+NK-DUMMY-095,Nike,Trail Running,Zegama 2,Nike Zegama 2 (Contoh),Hitam/Merah,Wanita,2695000,2,menipis,Shopee;Carousell,36-47,0.65,dummy
+NK-DUMMY-096,Nike,Trail Running,Wildhorse 9,Nike Wildhorse 9 (Contoh),Putih/Hitam,Pria,1986000,5,menipis,Instagram;Carousell;Facebook;Shopee,36-47,0.586,dummy
+NK-DUMMY-097,Nike,Sandal dan Clogs,Calm Slide,Nike Calm Slide (Contoh),Biru Muda,Wanita,783000,5,menipis,Shopee;Carousell;Facebook;Instagram,36-46,0.615,dummy
+NK-DUMMY-098,Nike,Sandal dan Clogs,Offcourt Slide,Nike Offcourt Slide (Contoh),Kuning,Unisex,827000,25,tersedia,Carousell;Facebook,36-46,0.697,dummy
+NK-DUMMY-099,Nike,Sandal dan Clogs,Victori One Slide,Nike Victori One Slide (Contoh),Pink,Wanita,1062000,0,habis,Carousell;Facebook,36-46,0.485,dummy
+NK-DUMMY-100,Nike,Sandal dan Clogs,Calm Mule,Nike Calm Mule (Contoh),Pink,Pria,1025000,35,tersedia,Shopee;Facebook,36-46,0.525,dummy
+NK-DUMMY-101,Nike,Sandal dan Clogs,Calm Sandal,Nike Calm Sandal (Contoh),Ungu,Unisex,1136000,25,tersedia,Instagram;Shopee;Facebook,36-46,0.493,dummy
+NK-DUMMY-102,Nike,Sandal dan Clogs,Asuna 2 Slide,Nike Asuna 2 Slide (Contoh),Hijau Army,Unisex,947000,35,tersedia,Instagram;Shopee;Carousell,36-46,0.509,dummy
+NK-DUMMY-103,Nike,Sandal dan Clogs,Calm Slide,Nike Calm Slide (Contoh),Abu-abu/Hitam,Wanita,513000,18,tersedia,Facebook;Instagram,36-46,0.95,dummy
+NK-DUMMY-104,Nike,Sandal dan Clogs,Offcourt Slide,Nike Offcourt Slide (Contoh),Merah/Hitam,Wanita,1009000,50,tersedia,Carousell;Facebook;Shopee,36-46,0.556,dummy
+NK-DUMMY-105,Nike,Sandal dan Clogs,Victori One Slide,Nike Victori One Slide (Contoh),Abu-abu/Hitam,Wanita,647000,12,tersedia,Facebook;Instagram;Shopee;Carousell,36-46,0.943,dummy
+NK-DUMMY-106,Nike,Sandal dan Clogs,Calm Mule,Nike Calm Mule (Contoh),Putih/Merah,Pria,772000,35,tersedia,Carousell;Shopee;Facebook,36-46,0.67,dummy
+NK-DUMMY-107,Nike,Sandal dan Clogs,Calm Sandal,Nike Calm Sandal (Contoh),Hitam/Merah,Unisex,852000,8,tersedia,Shopee;Facebook;Carousell;Instagram,36-46,0.554,dummy
+NK-DUMMY-108,Nike,Sandal dan Clogs,Asuna 2 Slide,Nike Asuna 2 Slide (Contoh),Pink,Unisex,738000,35,tersedia,Instagram;Facebook;Carousell,36-46,0.932,dummy
+NK-DUMMY-109,Nike,Basketball,G.T. Cut 3,Nike G.T. Cut 3 (Contoh),Pink,Pria,3380000,60,tersedia,Shopee;Instagram,36-47,0.751,dummy
+NK-DUMMY-110,Nike,Basketball,Ja 3,Nike Ja 3 (Contoh),Hijau Mint,Pria,3158000,35,tersedia,Instagram;Carousell;Facebook,36-47,0.883,dummy
+NK-DUMMY-111,Nike,Basketball,Sabrina 3,Nike Sabrina 3 (Contoh),Oranye,Unisex,2431000,2,menipis,Carousell;Shopee;Facebook,36-47,0.498,dummy
+NK-DUMMY-112,Nike,Basketball,LeBron 22,Nike LeBron 22 (Contoh),Kuning,Unisex,3984000,12,tersedia,Shopee;Carousell;Instagram,36-47,0.491,dummy
+NK-DUMMY-113,Nike,Basketball,KD 17,Nike KD 17 (Contoh),Hijau Army,Wanita,2730000,25,tersedia,Instagram;Carousell;Shopee,36-47,0.55,dummy
+NK-DUMMY-114,Nike,Basketball,Book 1,Nike Book 1 (Contoh),Hijau Army,Wanita,1917000,1,menipis,Carousell;Facebook,36-47,0.708,dummy
+NK-DUMMY-115,Nike,Training,Metcon 9,Nike Metcon 9 (Contoh),Cokelat,Pria,2386000,12,tersedia,Facebook;Instagram,36-47,0.598,dummy
+NK-DUMMY-116,Nike,Training,Free Metcon 6,Nike Free Metcon 6 (Contoh),Pink,Wanita,1792000,12,tersedia,Facebook;Instagram;Shopee;Carousell,36-47,0.442,dummy
+NK-DUMMY-117,Nike,Training,SuperRep Go 3,Nike SuperRep Go 3 (Contoh),Putih/Hitam,Unisex,2251000,35,tersedia,Facebook;Instagram;Shopee;Carousell,36-47,0.462,dummy
+NK-DUMMY-118,Nike,Training,Zoom Metcon,Nike Zoom Metcon (Contoh),Oranye,Pria,1811000,12,tersedia,Facebook;Shopee;Carousell,36-47,0.434,dummy
+NK-DUMMY-119,Nike,Training,MC Trainer 3,Nike MC Trainer 3 (Contoh),Hijau Mint,Wanita,2034000,18,tersedia,Instagram;Carousell;Facebook,36-47,0.334,dummy
+NK-DUMMY-120,Nike,Training,Flex Experience 12,Nike Flex Experience 12 (Contoh),Hitam/Putih,Pria,2316000,35,tersedia,Facebook;Carousell;Shopee,36-47,0.61,dummy
